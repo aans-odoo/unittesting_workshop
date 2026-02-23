@@ -9,20 +9,19 @@
        linked to that product.
 
 ## Helpers -
-  To create a product and tag you can use:
+  To create a product you can use:
     ```
     # product with listing price
     product = self.env['product.product'].create({
         'name': 'Test Product',
-        'lst_price': 99.0,
+        'list_price': 99.0,
     })
 
     # product with tags
-    product_tag = self.env['product.tag'].create({'name': 'Test Tag'})
     product = self.env['product.product'].create({
         'name': 'Test Product 2',
-        'lst_price': 99.0,
-        'product_tag_ids': [product_tag.id],
+        'list_price': 110.0,
+        'product_tag_ids': [Command.create({'name': 'my-tag'})],
     })
     ```
 
