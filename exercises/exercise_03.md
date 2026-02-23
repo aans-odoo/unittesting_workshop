@@ -15,7 +15,7 @@
     ```
       self.url_open('/http-route')
       self.make_jsonrpc_request('/rpc-route', {
-          'data': 1
+          'param1': 'data1'
       })
     ```
 
