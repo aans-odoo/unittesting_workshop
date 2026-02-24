@@ -7,6 +7,7 @@ class TestSampleClass(TransactionCase):
     def test_01(self):
         self.assertEqual(1, 1)
     
+
 @tagged('demo')
 class TestSampleClass02(TransactionCase):
     def test_02(self):
